@@ -1,14 +1,9 @@
-
-export * from './types'
-export * from './strategies/minimize'
-
+import { minimizeBoxesUsed } from "./strategies/minimize";
+import { Box, Item, PackingResult } from "./types";
 
 /**
- * Usage, TODO:
+ * Usage: 
+ * 
+ * const packingResult = minimizeBoxesUsed(boxSizes, itemsToPack)
  */
-
-// minimizeBoxesUsed(boxSizes, items)
-
-
-/** Use strategies to pack the boxes instead of directly calling the packer */
-// export { minimizeBoxesUsed, Box, Item }
+export { minimizeBoxesUsed, Box, Item, PackingResult }
