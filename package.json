@@ -1,0 +1,40 @@
+{
+  "name": "box-packer",
+  "version": "0.1.0",
+  "description": "Box packing of physical items for real world operations.",
+  "author": "Danica Brown",
+  "homepage": "https://www.danicabrown.com/posts/bin-packer",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "coverage": "jest --collect-coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dbrown428/box-packer"
+  },
+  "keywords": [
+    "binpacking",
+    "packing",
+    "box",
+    "packer",
+    "box packing",
+    "box packer",
+    "shipment packing",
+    "item packer"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "binpackingjs": "^3.0.2",
+    "purify-ts": "^2.1.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.12",
+    "@types/node": "^22.1.0",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.2.4",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.4"
+  },
+  "packageManager": "yarn@4.4.0"
+}
