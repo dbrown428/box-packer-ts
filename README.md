@@ -132,4 +132,5 @@ yarn coverage
 ## TODO:
 - remove PurifyTs, use promises for package.
 - restructure code for publishing to npm
+- setup CI/CD
 
