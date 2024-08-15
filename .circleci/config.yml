@@ -1,6 +1,6 @@
 version: 2.1
 orbs:
-  node: circleci/node@5
+  node: circleci/node@5.2.0
 jobs:
   test-node:
     # Install node dependencies and run tests
@@ -11,11 +11,17 @@ jobs:
       - checkout
       - node/install-packages:
           pkg-manager: yarn
+      # run:
+      #   name: Run linter
+      #   command: yarn lint
       - run:
           name: Run tests
           command: yarn circleci
       - store_test_results:
           path: ./coverage/
+      # - run:
+      #    name: Run built
+      #    command: 
 workflows:
   build-and-test:
     jobs:
